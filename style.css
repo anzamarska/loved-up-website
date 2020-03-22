@@ -15,7 +15,7 @@ section{
     position: relative;
     height: 100vh;
     width: 100vw;
-    box-shadow: inset 0 0 0 2.5vh rgba(255,255,255,0.3);;
+    box-shadow: inset 0 0 0 2.5vh rgba(255,255,255,0.3);
 }
 
 .banner-wrapper .story-wrapper .collection-wrapper .stock-wrapper .stock-wrapper2{
@@ -36,11 +36,13 @@ h2{
     font-size:calc(5vw + 2px);
     top: 50vh;
     letter-spacing: 4vw;
+    text-shadow: 2px 2px 1.7px black;
 }
 
 p, a{
     color: white;
     font-size:calc(4vw + 6px);
+    text-shadow: 2px 2px 1.7px black;
 }
 
 p{
@@ -107,15 +109,25 @@ img{
     z-index: -1;
 }
 
+/* #goToStock{
+    transition: transform 0.5s;
+} */
+
 #stock-wrapper2{
     position: absolute;
-    background-color: tomato;
+    box-shadow: inset 0 0 0 2.5vh rgba(255,255,255,0.3);
     width: 100vw;
     height: 100vh;
     z-index: 1;
+    transform: translateX(-100%);
+    transition: transform 1.8s;
 }
 
-#stock-wrapper2 { transform: translateX(-100%);}
+#stock-wrapper2 p{
+    top: 35vh;
+    padding: 8vh;
+}
+
 #stock-wrapper2.open { transform: translateY(0);}
 
 @media all and (orientation: landscape) {
