@@ -7,6 +7,7 @@
 html{
     font-size: 10px;
     font-family: 'Bellota Text', cursive;
+    background-color: #c4c2c0;
 }
 
 section{
@@ -60,12 +61,11 @@ a{
 }
 
 .banner{
-    background-image: url("images/g001.JPG");
+    background-image: url("images/MKOL9636\ kopia.jpg");
 }
 
 .story{
-    background-image: url("images/MKOL9636\ kopia.jpg");
-
+    background-image: url("images/g001.JPG");
 }
 
 .collection{
@@ -86,13 +86,13 @@ a{
 }
 
 .business-name{
-    top: 50vh;
-    font-size: 5vh;
+    top: 40vh;
+    font-size: 4vh;
     letter-spacing: 4vw;
 }
 
 .banner-wrapper a{
-    top: 60vh;
+    top: 82vh;
 }
 
 .story-wrapper h2{
@@ -170,6 +170,16 @@ picture{
         color:red;
     } */
   }
+
+@media only screen and (orientation: landscape) {
+
+.banner, .story, .collection, .stock, #stock-wrapper2{
+    /* height: 100vh; */
+    background-position: 100% 0;
+    background-size:50%;
+}
+
+}
 
 
 /* 
